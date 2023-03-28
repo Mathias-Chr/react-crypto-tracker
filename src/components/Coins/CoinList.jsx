@@ -6,7 +6,7 @@ import styles from './CoinList.module.css';
 
 const CoinsList = (props) => {
   return (
-    <Card className={styles.flex}>
+    <Card className={styles.content}>
       <p>{props.items.market_cap_rank}</p>
       <div className="img-symbol">
         <p>{props.items.image}</p>

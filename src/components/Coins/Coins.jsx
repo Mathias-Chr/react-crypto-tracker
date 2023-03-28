@@ -2,8 +2,6 @@ import React from 'react';
 
 import CoinsList from './CoinList.jsx';
 
-import styles from './Coins.module.css';
-
 const Coins = (props) => {
   return (
     <>

@@ -12,12 +12,12 @@ const Header = () => {
         <GiTwoCoins className={styles['header--headline__coin']} />
         <h1 className={styles['header--headline']}>
           Crypto
-          <span className={styles['header--headline__orange']}>Coins</span>
+          <span className={styles['header--headline__orange']}> Coins</span>
         </h1>
       </div>
 
-      <Card>
-        <div className={styles['header--information']}>
+      <Card className={styles.header}>
+        <div className={styles['header--content']}>
           <p>#</p>
           <p>Coin</p>
           <p>Price</p>
