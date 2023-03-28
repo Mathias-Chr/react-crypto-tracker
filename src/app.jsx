@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './components/Header/Header.jsx';
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
-      <h1>Hallo React</h1>
+      <Header />
     </div>
   );
 };
