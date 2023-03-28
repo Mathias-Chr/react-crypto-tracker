@@ -2,23 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 3rem auto;
   width: 50rem;
   max-width: 95%;
 }
 
-.header .coin {
-  color: #f2a900;
+.header--headline {
   font-size: 2.5rem;
+  color: white;
+}
+
+.header--headline__orange {
+  color: #f2a900;
+}
+
+.header--headline__coin {
+  font-size: 2.5rem;
+  color: #f2a900;
   margin-right: 10px;
 }
 
-.header h1 span {
-  color: #f2a900;
-}
-
-.header h1 {
+.header--information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   color: white;
-  font-size: 2.5rem;
 }
