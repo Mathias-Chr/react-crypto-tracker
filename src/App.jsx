@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 
 import axios from 'axios';
 
-import Navbar from './components/navbar';
-import Coins from './components/coins';
+import Navbar from './components/nav/navbar';
+import Coins from './components/coins/coins';
 
 export default function App() {
   const [coins, setCoins] = useState([]);
