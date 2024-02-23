@@ -1,7 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
+import { Routes, Route } from 'react-router-dom';
+
 import axios from 'axios';
+
+import Coin from './routes/coin';
 
 import Navbar from './components/nav/navbar';
 import Coins from './components/coins/coins';
@@ -27,7 +31,12 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Coins coins={coins} />
+      <Routes>
+        <Route path="/" element={<Coins coins={coins} />} />
+        <Route path="/coin" element={<Coin />}>
+          <Route path=":coinId" element={<Coin />} />
+        </Route>
+      </Routes>
     </>
   );
 }
